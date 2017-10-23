@@ -14,7 +14,7 @@ var io = require('socket.io')(server);
 var particle = new Particle();
 var token;
 
-var myDevice = '3a0020000651353530373132';
+var myDevice = 'ENTREZ VOTRE NUMERO DE DEVICE';
 
 
 // j'instance la connection mongo 
@@ -221,7 +221,7 @@ app.get('/liste/:id', function(req,res){
     });
 });
 
-particle.login({username:'johan.prugnieres@gmail.com',password:'Youkki13'}).then(
+particle.login({username:'ENTREZ VOTRE EMAIL',password:'ENTREZ VOTRE MOT DE PASSE'}).then(
     function(data){
         token = data.body.access_token;
         console.log('Access Granted !');
