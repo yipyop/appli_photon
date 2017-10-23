@@ -1,0 +1,17 @@
+<div class="row">
+
+	<div class="col-xs-12">
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="n in maliste"id="item{{n._id}}" >
+				<a class="pull-left" ng-href="#!/eleve/{{n._id}}">{{n.nom | monFiltre}}&nbsp;{{n.prenom}}</a>
+				<a class="btn btn-xs btn-danger pull-right" ng-click="deleteEleve(n, $index)">supprimer</a>
+				<a class="btn btn-xs btn-danger pull-right" ng-href="#!/eleve/update/{{n._id}}">modifier</a>
+			</li>
+		</ul>
+	</div>
+
+	<!--{{ date | date:"dd/MM/yyyy"}}-->
+	
+	
+	<div data-my-first-dir></div>
+</div>
